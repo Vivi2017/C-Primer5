@@ -1,0 +1,28 @@
+Assume multiset<string> c; vector<string> v;, then
+
+copy(v.begin(), v.end(), inserter(c, c.end()));
+is OK.
+
+copy(v.begin(), v.end(), back_inserter(c));
+is error. A multiset doesn't have push_back memeber function.
+
+copy(c.begin(), c.end(), inserter(v, v.end()));
+is OK.
+
+copy(c.begin(), c.end(), back_inserter(v));
+is OK.
+
+
+
+
+map<string , int> word_count;
+auto it =  word_count.begin();
+= 
+map <string , int>::const_itertor it;
+
+
+
+The definition can be written as
+
+multiset<Sales_data, bool (*)(const Sales_data &, const Sales_data &>::iterator it = bookstore.begin();
+Note that iterators for sets are always const.
