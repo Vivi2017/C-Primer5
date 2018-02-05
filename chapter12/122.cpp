@@ -107,12 +107,12 @@ int main() {
 	
 	 StrBlob sra{"Here","you","are"};
 	 srb = sra;
-	 cout <<"srb size 110 =" << srb.size() <<endl;
+	 cout <<"lin 110 srb size  = " << srb.size() <<endl;
 	 sra.push_back("boy");
-	 cout <<"sra  size =" << sra.size() <<endl;
+	 cout <<"lin 112 sra  size =" << sra.size() <<endl;
 	}
 
-  cout <<"srb size 115 =" << srb.size() <<endl;
+  cout <<"line 115 srb size  =" << srb.size() <<endl;
 
 /*
   testStrBlob(sb1);
@@ -132,8 +132,8 @@ int main() {
 
 
   return 0;
-}
 
+#if 0
 //123
 //No, a const object of this class type should not be able to change the object. Thus we should not define const version of push_back or pop_back. Although the complier does not report errors if we define const versions of push_back and pop_back, it is not logical for a const object.
 //124
@@ -142,9 +142,12 @@ int main() {
 //125
 /*
 //Since we do not make the constructor explicit, the pros are
-//we can use = { /* ... */ } to initialize a StrBlob object,
+//we can use = { /* ... */ //} to initialize a StrBlob object,
 //we can use assignment to assign an initializer list to a StrBlob object,
 //we can pass an initializer list to functions who need a StrBlob parameter.
 //The cons are
 //we may overlook the implicit conversion made by compiler sometime, which may be bug prone.
 */
+#endif
+
+}
